@@ -1,0 +1,166 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;1,400&display=swap');
+
+:root{
+--primary-red: hsl(0, 100%, 74%) ;
+--primary-green: hsl(154, 59%, 51%);
+--accent-blue: hsl(248, 32%, 49%);
+--neutral-dark-blue: hsl(249, 10%, 26%) ;
+--grayish-blue: hsl(246, 25%, 77%);
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Poppins', sans-serif;
+    font-size: 62.5%;
+    /*font-size: 16px;
+       Weights: 400, 500, 600, 700*/
+}
+
+body{
+    background: url("./images/bg-intro-mobile.png");
+    background-color: var(--primary-red);
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 8.8rem 2.5rem 0 2.5rem;
+    
+    gap: 2rem;
+    width: 330px;
+}
+.title{
+    font-size: 2.6rem;
+    text-align: center;
+    color: whitesmoke;
+    font-weight: 700;
+    
+    
+}
+.description{
+    font-size: 1.6rem;
+    text-align: center;
+    color: whitesmoke;
+    font-weight: 400;
+    margin-top: 2rem;
+}
+
+.btn{
+    margin-top: 4.5rem;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    padding: 2.2rem 6rem;
+    border: none;
+    border-radius: 1rem;
+    background: var(--accent-blue);
+    color: whitesmoke;
+    box-shadow: 1px 14px 9px -2px rgba(0,0,0,0.35);
+    
+}
+
+.form{
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2.5rem;
+    border-radius: 1rem;
+    box-shadow: 1px 14px 9px -2px rgba(0,0,0,0.35);
+    
+}
+.form .input-text{
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center;
+    width: 278px;
+    padding: 1.5rem 0 1.5rem 2rem;    
+    border-radius: 0.5rem;
+    border: 1px solid var(--grayish-blue);
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+}
+.form .form-btn{
+    margin-top: 0.5rem;
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 1.8rem 4rem;
+    border: none;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    background-color: var(--primary-green);
+    border-radius: 0.5rem;
+    color: whitesmoke;
+    box-shadow: 1px 14px 9px -2px rgba(0,0,0,0.35);
+}
+.form .form-description{
+    font-size: 1.1rem;
+    text-align: center;
+    color: var(--grayish-blue);
+    margin: 0 2rem 0 2rem;
+
+}
+.form .form-description strong {
+    color: var(--primary-red);
+}
+
+
+@media screen and (min-width: 1440px) {
+    .main{
+        display: flex;;
+        flex-direction: row;
+        width: 1440px;
+    }
+    .header{
+
+        width: 500px;
+        
+    }
+    .header .title{
+        margin-left: -6rem;
+        margin-top: 2rem;
+        font-size: 5rem;
+        line-height: 5.5rem;
+        text-align: left;
+    }
+    .header .description{
+        text-align: left;
+        margin-left: -6rem;
+        margin-top: 3rem;
+    }
+
+    .content{
+        width: 540px;
+    }
+    .content .btn{
+        width: 540px;
+    }
+    .form{
+        padding: 3.5rem 2rem 0 2rem;
+    }
+    .form .input-text{
+        width: 460px;
+        margin: 0.5rem 2rem 0 2rem;
+    }
+    .form .form-btn{
+        width: 460px;
+        margin-left: 2rem;
+    }
+    .form .form-description{
+        margin: 1rem 0 4rem 2rem;
+    }
+}
+
+
