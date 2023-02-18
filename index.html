@@ -1,36 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>R13 Intro component with signup form master</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
     <main class="main">
-        <header class="header">
-            <h1 class="title">Learn to code by watching others</h1>
-            <p class="description">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but undestanding how developers think is invaluable.</p>
-        </header>
-        <div class="content">
-            <button class="btn">
-                <strong>Try it free 7 days </strong> then $20/mo. thereafter
-             </button>
-     
-             <form action="" class="form">
-                 <input type="text"  class="form-first-name input-text" placeholder="First Name">
-                 <input type="text"  class="form-last-name input-text" placeholder="Last Name">
-                 <input type="text"  class="form-email input-text" placeholder="Email Address">
-                 <input type="text"  class="form-password input-text" placeholder="Password">
-                 <input type="submit"  class="form-btn" value="CLAIM YOUR FREE TRIAL">
-                 <p class="form-description">By clicking the button, you are agreeing to our <strong>Terms and services</strong></p>
-             </form>
-        </div>    
-        
+      <header class="header">
+        <h1 class="title">Learn to code by watching others</h1>
+        <p class="description">
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but undestanding how developers think is
+          invaluable.
+        </p>
+      </header>
+      <div class="content">
+        <button class="btn">
+          <strong>Try it free 7 days </strong> then $20/mo. thereafter
+        </button>
+
+        <form action="#" class="form">
+          <div class="group-input-text">
+            <input
+              type="text"
+              class="form-first-name input-text "
+              placeholder="First Name"
+            />
+            <img
+            src="./images/icon-error.svg"
+            alt="image error"
+            class="error-first-name-image form-image-error  hidden"
+          />
+          </div>
+
+          <p class="error-first-name-description hidden">First Name can not be empty</p>
+
+          <div class="group-input-text">
+            <input
+              type="text"
+              class="form-last-name input-text"
+              placeholder="Last Name"
+            />
+            <img
+              src="./images/icon-error.svg"
+              alt="image error"
+              class="error-last-name-image form-image-error-last-name form-image-error hidden"
+            />
+          </div>
+          <p class=" error-last-name-description form-text-error hidden">last Name can not be empty</p>
+          <div class="group-input-text">
+            <input
+              type="text"
+              class="form-email input-text"
+              placeholder="Email Address"
+            />
+            <img
+              src="./images/icon-error.svg"
+              alt="image error"
+              class="error-email-image form-image-error-email form-image-error hidden"
+            />
+          </div>
+
+          <p class="error-email-description form-text-error hidden">email can not be empty</p>
+
+          <div class="group-input-text">
+            <input
+            type="text"
+            class="form-password input-text"
+            placeholder="Password"
+          />
+          <img
+            src="./images/icon-error.svg"
+            alt="image error"
+            class="error-password-image form-image-error-password form-image-error hidden"
+          />
+          </div>
+          
+          <p class="error-password-description form-text-error hidden">Password can not be empty</p>
+
+          
+          <input type="submit" class="form-btn" value="CLAIM YOUR FREE TRIAL" />
+          <p class="form-description">
+            By clicking the button, you are agreeing to our
+            <strong>Terms and services</strong>
+          </p>
+        </form>
+      </div>
     </main>
 
-
-<script src="./javascript.js"></script>    
-</body>
+    <script src="./javascript.js"></script>
+  </body>
 </html>
