@@ -18,7 +18,6 @@ const formErrorDescription=[
     document.querySelector(".error-password-description"),
 ]
 
-
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   formData.forEach((item,index) => {
@@ -28,11 +27,11 @@ form.addEventListener("submit", (e) => {
       formErrorImage[index].classList.remove("hidden");
       formErrorDescription[index].classList.remove("hidden");
     }
+   
     else {
         item.style.border = "1px solid green";
         formErrorImage[index].classList.add("hidden");
         formErrorDescription[index].classList.add("hidden");
     }
-    
   });
 });

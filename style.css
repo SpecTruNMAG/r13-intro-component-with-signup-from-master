@@ -24,8 +24,6 @@ html{
 body{
     background: url("./images/bg-intro-mobile.png");
     background-color: var(--primary-red);
-}
-body{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,17 +34,14 @@ body{
     justify-content: center;
     align-items: center;
     margin: 8.8rem 2.5rem 0 2.5rem;
-    
     gap: 2rem;
-    width: 330px;
+    width: 350px;
 }
 .title{
     font-size: 2.6rem;
     text-align: center;
     color: whitesmoke;
-    font-weight: 700;
-    
-    
+    font-weight: 700;    
 }
 .description{
     font-size: 1.6rem;
@@ -68,9 +63,11 @@ body{
     background: var(--accent-blue);
     color: whitesmoke;
     box-shadow: 1px 14px 9px -2px rgba(0,0,0,0.35);
-    
 }
-
+.btn:hover{
+    background: var(--neutral-dark-blue);
+    cursor: pointer;
+}
 .form{
     background-color: whitesmoke;
     display: flex;
@@ -79,7 +76,6 @@ body{
     padding: 2.5rem;
     border-radius: 1rem;
     box-shadow: 1px 14px 9px -2px rgba(0,0,0,0.35);
-    
 }
 .form .group-input-text{
     display: flex;
@@ -107,14 +103,16 @@ body{
     position: relative;
     right: 30px;
 }
-
-
+.form .form-text-error{
+    margin-left: 110px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--primary-red);
+}
 .form .hidden{
     display: none;
 }
-
-
-
 .form .form-btn{
     margin-top: 0.5rem;
     font-size: 1.4rem;
@@ -128,17 +126,20 @@ body{
     color: whitesmoke;
     box-shadow: 1px 14px 9px -2px rgba(0,0,0,0.35);
 }
+
+.form .form-btn:hover{
+    background: var(--neutral-dark-blue);
+    cursor: pointer;
+}
 .form .form-description{
     font-size: 1.1rem;
     text-align: center;
     color: var(--grayish-blue);
     margin: 0 2rem 0 2rem;
-
 }
-.form .form-description strong {
+.form .form-description a {
     color: var(--primary-red);
 }
-
 
 @media screen and (min-width: 1440px) {
     .main{
@@ -174,8 +175,14 @@ body{
         padding: 3.5rem 2rem 0 2rem;
     }
     .form .input-text{
-        width: 460px;
+        width: 440px;
         margin: 0.5rem 2rem 0 2rem;
+    }
+    .form .form-image-error{
+        right: 60px;
+    }
+    .form .form-text-error{
+        margin-left: 280px;
     }
     .form .form-btn{
         width: 460px;
